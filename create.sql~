@@ -1,0 +1,7 @@
+create table users(
+id int unsigned not null auto_increment primary key,
+name char(20) not null,
+card char(21) not null,
+sex char(2) not null,
+birthday char(8) not null,
+);

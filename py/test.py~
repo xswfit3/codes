@@ -1,0 +1,17 @@
+#coding:utf-8
+f0 = open("/home/xunw/x/data/800W-1000W.csv")
+fOut = open("/home/xunw/x/data/filter.csv",'w')
+head = f0.readline()
+print head
+print len(head.split(','))  #33
+i = 0 
+while i < 10:
+    line = f0.readline()
+    print line
+    i += 1
+    lineList =  line.split(',')
+    if len(lineList) < 7:
+        break
+    strLine = lineList[0] +','+ lineList[4] +','+ lineList[5]+','+lineList[6] +'\n'
+    fOut.write(strLine)
+print "write ok",i

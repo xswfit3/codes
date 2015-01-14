@@ -1,0 +1,4 @@
+LOAD DATA INFILE '/home/xunw/x/data/filter.csv'
+INTO TABLE users
+CHARACTER SET utf8
+FIELDS TERMINATED BY ',' ENCLOSED BY '"';
